@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>物件紹介ページ</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="header-left">SAMI不動産</div>
+      <div class="header-right">
+        <nav>
+          <ul class="nav-wrapper">
+            <li class="nav-li-wrapper">買いたい</li>
+
+            <li class="nav-li-wrapper">売りたい</li>
+
+            <li class="nav-li-wrapper">借りたい</li>
+
+            <li class="nav-li-wrapper"
+            ><a href="#" class="btn-radius-solid">お問い合わせ<i class="fas fa-angle-right fa-position-right"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <div class="title">
+      <div class="content-title">
+        <h1 class="address"><span class="type">中古戸建</span>東京都目黒区目黒本町</h1>
+        <table>
+          <tr>
+            <th>販売価格</th>
+            <td>8,280万円</td>
+          </tr>
+          <tr>
+            <th>最寄り駅</th>
+            <td>東急目黒線「武蔵小山」駅 徒歩○○分</td>
+          </tr>
+          <tr>
+            <th>間取り</th>
+            <td>3LDK</td>
+          </tr>
+          <tr>
+            <th>広さ</th>
+            <td>120平米 (1F:60 2F:60) </td>
+          </tr>
+          <tr>
+            <th>築年数</th>
+            <td>平成15年12月（築22年）</td>
+          </tr>
+        </table>
+        <div class="topics">
+          <div class="topic-title">おすすめポイント</div>
+          <div class="topic">
+            緑溢れる閑静な高級住宅地○○町。<br>○○ハウス施工 室内フルリノベーションを施した中古住宅
+          </div>
+        </div>
+      </div>
+      <div class="top-img">
+        <img src="gaikan.jpeg" alt="外観写真">
+      </div>
+    </div>
+
+
+    <!-- 間取り図のボタンが示す位置
+    btn1... kitchin
+    btn2... niwa
+    btn3... senmen
+    btn4... 2F
+    --> 
+    <div class="container">
+      <div id="floor">
+        <div class="floor-wrapper" id="js-btn">
+          <img src="madori.gif" alt="">
+          <button type="button" class="btn0 clear-decoration btn" data-btn="0"></button>
+          <button type="button" class="btn1 clear-decoration btn" data-btn="1"></button>
+          <button type="button" class="btn2 clear-decoration btn" data-btn="2"></button>
+          <button type="button" class="btn3 clear-decoration btn" data-btn="3"></button>
+        </div>
+      </div>
+
+      <div id="js-tab">
+        <div class="image-block" data-tab="0">
+          <img class="img" src="k.jpg" alt="キッチン">
+          <h2>ご家族との会話も弾む対面式キッチン。調理のしやすいW2400サイズに食器洗浄乾燥機完備。ダイニングとの境目の通し柱を活かした格子間仕切りを採用
+          </h2>
+        </div>
+        
+        <div class="image-block" data-tab="1">
+          <img src="niwa2.jpeg" alt="庭">
+          <h2>石造りのガーデンテーブルを配備したこだわりの和風庭。中心の松の木に合わせて日本庭園向けの植栽</h2>
+        </div>
+
+        <div class="image-block" data-tab="2">
+          <img src="senmen.jpeg" alt="洗面所">
+          <h2>ワイドタイプの洗面化粧台、浴室は1616サイズのLIXILユニットバスを採用。
+          </h2>
+        </div>
+
+        <div class="image-block" data-tab="3">
+          <img src="IMG_2094.jpeg" alt="２階洋室">
+          <h2>2Fの和室は洋室へ変更。南側から日差しの入る明るい室内が印象的。</h2>
+        </div>
+      </div>
+    </div>
+  </div>    
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
